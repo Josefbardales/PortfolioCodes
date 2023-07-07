@@ -11,13 +11,12 @@ SELECT Location, Date, total_cases, new_cases, total_deaths, population FROM dbo
 ORDER BY 1,2
 
 -- Looking at Total Cases vs Total Deaths
--- Percentage of dying from Covid in Honduras
+-- Percentage of dying from Covid in Honduras, my home country
 SELECT Location, Date, total_cases, total_deaths, (total_deaths/total_cases)*100 as DeathPercentage
 FROM PortfolioProject.dbo.CovidDeaths
 WHERE location like '%Honduras%'
 ORDER BY 1,2
 
--- Total Cases vs Population
 -- Percentage of Population with Covid
 
 SELECT Location, Date, total_cases, population, (total_cases/population)*100 as InfectedPercentage
