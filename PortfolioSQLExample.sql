@@ -1,3 +1,5 @@
+-- The following SQL queries have been used on the following dataset: https://ourworldindata.org/covid-deaths in order to demonstrate how to obtain data in a publically available dataset.
+
 SELECT * FROM dbo.CovidDeaths
 WHERE Continent IS NOT NULL
 ORDER BY 3,4
